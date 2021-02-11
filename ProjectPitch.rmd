@@ -28,18 +28,16 @@ Shiny Application source code can be found [HERE:](https://github.com/barteec/De
 - The application is hosted on  [shinyapps.io](https://www.shinyapps.io/) by RStudio  
 
 
-## This is how you filter your data
-- Label the main titel using a textInput
-
-- Change/determine the size of the plot points using a numericInput
-
-- Add a line of best fit using a checkboxInput
-
-- You can change the color of the plot points using a colourInput
-
-- Select data options using selectInput and sliderInput
-
-- To download filtered data use the download button
+## The data that was used
+An excerpt of the data available [HERE]("https://www.gapminder.org/data/", "Gapminder.org"), 
+"For each of 142 countries, the package provides values for life expectancy, Gross Domestic Product (GDP), and population, 
+every five years, from 1952 to 2007. Data can be reused freely but please attribute the original data source
+```{r echo=TRUE}
+library(kableExtra)
+library(gapminder)
+data <- gapminder
+kable(head(data))
+```
 
 ## The Graph and Tables
 There are two tabs in main panel as below:
