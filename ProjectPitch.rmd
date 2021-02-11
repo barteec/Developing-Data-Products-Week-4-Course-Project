@@ -1,24 +1,18 @@
 ---
 title: "Developing Data Products Assign-4 w/ Gapminder Data"
+subtitle: "Reproducible Pitch Presentation"
 author: "Bently"
 date: "2/10/2021"
-output: 
-ioslides_presentation: default
-  html_document:
-    number_sections: yes
-    toc: yes
-  slidy_presentation: default
-mode: selfcontained
-job: Reproducible Pitch Presentation
-subtitle: Developing Data Products Course Project
+output: ioslides_presentation
+
 ---
 
 ## Introduction
+This peer assessed assignment has two parts.
 
-This peer assessed assignment has two parts. 
-* First, you will create a Shiny application and deploy it on Rstudio's servers. 
-* Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+- First, you will create a Shiny application and deploy it on Rstudio's servers. 
 
+- Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
 
 
 Shiny Application can be found [HERE:](https://barteec.shinyapps.io/Developing_Data_Products_Assign_4_Gapminder_Data/)
@@ -26,36 +20,40 @@ Shiny Application can be found [HERE:](https://barteec.shinyapps.io/Developing_D
 Shiny Application source code can be found [HERE:](https://github.com/barteec/Developing-Data-Products-Week-4-Course-Project) 
 
 
-## Application Overview
+## Shiny Application Overview
+- Shiny is an R package that makes it easy to build interactive web apps straight from R. You can host standalone apps on a webpage or embed them in R Markdown documents or build dashboards. 
 
-- The application is written in Shiny which is a web application framework for R
-- The source code consists of two files: server.R and ui.R
-- server.R includes the the server logic of a Shiny web application
-- ui.R includes the the user-interface definition, which uses the sidebarLayout template
-- The application is hosted on Rstudio's shiny server in the cloud (Shinyapps.io)
+- The source code consists of in one file in the Project_shiny folder: [app.R](https://github.com/barteec/Developing-Data-Products-Week-4-Course-Project/tree/main/Project_shiny)
 
-## How it works? - I | The Application contains: Left Panel
+- The application is hosted on  [shinyapps.io](https://www.shinyapps.io/) by RStudio  
 
+
+## This is how you filter your data
 - Label the main titel using a textInput
+
 - Change/determine the size of the plot points using a numericInput
+
 - Add a line of best fit using a checkboxInput
-- Change/determine the color of the plot points using a colourInput
+
+- You can change the color of the plot points using a colourInput
+
 - Select data options using selectInput and sliderInput
-- download filtered data using a downloadButton
 
-## How it works? - II | The Application contains: Main Panel
+- To download filtered data use the download button
 
+## The Graph and Tables
 There are two tabs in main panel as below:
 
-- Plot: This displays plot for corresponding dataframe
-- Table: This displays a searchable-interactive Table for corresponding dataframe
+- Gapminder Plot: This displays plot for corresponding dataframe
 
-![](gapminder_using_shiny_1.png)
+- GapminderTable: This displays a searchable-interactive Table for corresponding dataframe
 
-## Ready to give it a try?
+![](Capture1.png)
 
-Use the Shiny app at https://halici.shinyapps.io/Gapminder-Data-Visualization-using-Shiny-and-Plotly/ 
+## Here is where you can view the Project?
+Shiny Application can be found [HERE:](https://barteec.shinyapps.io/Developing_Data_Products_Assign_4_Gapminder_Data/)
 
-Get the app source code at https://github.com/nihathalici/Developing-Data-Products-course--Assignment-Week-4-Shiny-Application-and-Reproducible-Pitch
+Shiny Application source code can be found [HERE:](https://github.com/barteec/Developing-Data-Products-Week-4-Course-Project) 
 
-![](gapminder_using_shiny_2.png)
+
+![](Capture2.png)
